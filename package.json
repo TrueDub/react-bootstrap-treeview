@@ -20,24 +20,22 @@
     }
   ],
   "main": [
-
+    "dist/react-bootstrap-treeview.js"
   ],
   "scripts": {
-    "install": "bower install",
-    "start": "node app"
-  },
-  "engines": {
-    "node": ">= 0.10.0"
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "dependencies": {
-    "express": "3.4.4"
+    "bootstrap": "^4.0.0"
   },
   "devDependencies": {
-    "bower": "1.3.x",
-    "grunt": "0.4.x",
-    "grunt-react": "~0.12.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-copy": "~0.8.0"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
   },
   "keywords": [
     "twitter",
